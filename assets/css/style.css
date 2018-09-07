@@ -193,28 +193,46 @@ h3 {
     position: fixed;
 }
 
-@media only screen and (max-width: 980px) {
-    .headercontainer {
-      max-width: 768px;
-      padding: 0 20px;
+@media screen and (max-width: 640px) {
+    header {
+      position: static;
+      margin-left: 0px;
+      max-width: 100%;
     }
   
-    .wrapper {
-      margin-left: 85px;
-      max-width: 420px;
+  .wrapper {
+      margin-right: 40px;
+  }
+
+   .namebox, .headercontainer, .container1, .portrait {
+    padding-left: 0px;  
+    width: 100%;
     }
-   
-    .portrait {
-      width: 100%;
+  
+    nav, .links {
+        margin: 15px 25;
+        margin-right: 0px;
+        width: 100%;
+        text-align: center;
+      }
+  
+    #about, #portfolio, #contact {
+        padding-left: 0;
+        margin-left: 0;
+        width: 33%;
     }
 
-    textarea {
+    .textarea {
         width: 100%;
     }
-}
-  
-  
-  @media only screen and (max-width: 768px) {
+
+    .container2 {
+        margin-left: 5px;
+        margin-bottom: 100px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
     header {
       max-width: 100%;
     }
@@ -228,46 +246,29 @@ h3 {
       }
   
     .container2 {
-    width: 100%;
+        width: 100%;
   } 
 }
 
-  @media only screen and (max-width: 640px) {
-    header {
-      max-width: 100%;
-      position: static;
-      margin-left: 0px;
+@media screen and (max-width: 980px) {
+    .headercontainer {
+      padding: 0 20px;  
+      max-width: 768px;
+      
     }
   
-  .wrapper {
-      margin-right: 40px;
-  }
-
-   .namebox, .headercontainer, .container1, .portrait {
+    .wrapper {
+      margin-left: 85px;
+      max-width: 420px;
+    }
+   
+    .portrait {
       width: 100%;
-      padding-left: 0px;
-    }
-  
-    nav, .links {
-        margin-right: 0px;
-        width: 100%;
-        margin: 15px 25;
-        text-align: center;
-      }
-  
-    #about, #portfolio, #contact {
-      width: 30%;
-      padding-left: 0;
-      margin-left: 0;
     }
 
-    .textarea {
-        width: 100%;
+    textarea {
+      width: 100%;
     }
-
-    .container2 {
-    margin-left: 5px;
-    margin-bottom: 100px;
-    }
-  }
+}
+  
   
